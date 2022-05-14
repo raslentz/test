@@ -14,14 +14,14 @@
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --background-color: #181818;
+  --background-color: #f5f5f5;
   --main-font: Inter, Helvetica Neue, Arial, sans-serif;
   --main-font-size: 1.4em;
-  --main-color: #fff;
+  --main-color: #181818;
   --block-margin: 0.2em;
   --heading-margin: 0 0 0.2em 0;
   --heading-font: Inter, Helvetica Neue, Arial, sans-serif;
-  --heading-color: #fff;
+  --heading-color: #181818;
   --heading-line-height: 1em;
   --heading-letter-spacing: normal;
   --heading-text-transform: none;
@@ -39,14 +39,14 @@
   --selection-color: none; }
 
 .reveal-viewport {
-  background: #181818;
-  background-color: #181818; }
+  background: #f5f5f5;
+  background-color: #f5f5f5; }
 
 .reveal {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.4em;
   font-weight: normal;
-  color: #fff; }
+  color: #181818; }
 
 .reveal ::selection {
   color: none;
@@ -73,7 +73,7 @@
 .reveal h5,
 .reveal h6 {
   margin: 0 0 0.2em 0;
-  color: #fff;
+  color: #181818;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-weight: 800;
   line-height: 1em;
