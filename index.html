@@ -1,34 +1,46 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Test</title>
+<link rel="stylesheet" href="dist/reset.css">
+<link rel="stylesheet" href="dist/reveal.css">
+<link rel="stylesheet" href="dist/theme/swiss.css" id="theme">
+<!-- Theme used for syntax highlighted code -->
+<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
+<textarea data-template>
+#### Slide 1
+- A paragraph with some text and a [link](http://hakim.se).
+- Second bullet point.
+  - subitem
+  - subitem 2
+- Back to top
 
-		<title>Test</title>
+--
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/swiss.css" id="theme">
+#### Slide 1a 
+- Second bullet point.
+  - subitem
+  - subitem 2
+- Back to top
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-			  <section>
-			  <section>
-			  <h4>Slide 1a</h4>
-			  and some text
-			  </section>
-			  <section>
-			  Slide 1b
-			  </section>
-			  </section>
-			  
-				<section>Slide 2</section>
-			</div>
-		</div>
+---
+
+#### Slide 2
+
+---
+
+#### Slide 3
+</textarea>
+</section>
+</div>
+</div>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
@@ -45,5 +57,5 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
-	</body>
+		</body>
 </html>
