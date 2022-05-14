@@ -28,7 +28,7 @@ h4:after {
 :root {
   --background-color: #f5f5f5;
   --main-font: Inter, Helvetica Neue, Arial, sans-serif;
-  --main-font-size: 1.4em;
+  --main-font-size: 1.0em;
   --main-color: #181818;
   --block-margin: 0.2em;
   --heading-margin: 0 0 0.2em 0;
@@ -56,7 +56,7 @@ h4:after {
 
 .reveal {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.4em;
+  font-size: 1.0em;
   font-weight: normal;
   color: #181818; }
 
@@ -113,7 +113,7 @@ h4:after {
   font-size: 1.3em; }
 
 .reveal h4 {
-  font-size: 1em; }
+  font-size: 1.2em; }
 
 .reveal h1 {
   text-shadow: none; }
