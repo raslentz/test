@@ -10,21 +10,10 @@
  *
  */
 @import url(https://rsms.me/inter/inter.css);
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
-h4:after {
-    content:' ';
-    margin: 0em 0em 0.5em 0em;
-    display:block;
-    border:1.5px solid #DC3918;
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
-    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
-    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
-}
 :root {
   --background-color: #f5f5f5;
   --main-font: Inter, Helvetica Neue, Arial, sans-serif;
@@ -56,7 +45,7 @@ h4:after {
 
 .reveal {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.0em;
+  font-size: .6em;
   font-weight: normal;
   color: #181818; }
 
@@ -116,7 +105,20 @@ h4:after {
   font-size: 1.2em; }
 
 .reveal h1 {
-  text-shadow: none; }
+    text-shadow: none; }
+
+.reveal h4:after {
+    content:' ';
+    margin: 0em 0em 0.5em 0em;
+    display:block;
+    border:1.5px solid #DC3918;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+}
 
 /*********************************************
  * OTHER
@@ -181,18 +183,35 @@ h4:after {
   margin-left: 40px; }
 
 .reveal blockquote {
-  display: block;
-  position: relative;
-  width: 70%;
-  margin: 0.2em auto;
-  padding: 5px;
-  font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+    quotes: none;
+    display: inline;
+    background: #f9f9f9;
+    position: relative;
+    padding: 2px;
+    font-style: italic;
+    color: #181818;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+}
 
-.reveal blockquote p:first-child,
+.reveal blockquote p {
+    quotes: none;
+    background: #f9f9f9;
+    position: relative;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+}
+
+.reveal blockquote p:first-child{
+    display: inline-block;
+    quotes:none;
+    width: 100%;
+    background: #f1f1f1;
+}
+
 .reveal blockquote p:last-child {
-  display: inline-block; }
+    quotes: none;
+    display: inline-block;
+}
 
 .reveal q {
   font-style: italic; }

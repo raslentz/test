@@ -24,11 +24,17 @@
 
 --
 
-#### Slide 1a 
-- Second bullet point.
+#### Slide 1a
+- Let's start with some math: $a=b$ .
+  
+1. Second bullet point.
   - subitem
   - subitem 2
-- Back to top
+2. Back to top
+  
+    > hello. This is a block. With some math, $$a=b.$$
+
+3. And more.
 
 ---
 
@@ -39,23 +45,60 @@
 #### Slide 3
 </textarea>
 </section>
+<section>
+  <h4>Let's try this</h4>
+  <li> one $$\alpha$$ </li>
+\[\begin{aligned}
+  \dot{x} &amp; = \sigma(y-x) \\
+  \dot{y} &amp; = \rho x - y - xz \\
+  \dot{z} &amp; = -\beta z + xy
+  \end{aligned} \]
+</section>
 </div>
 </div>
+<div id="DivContent"></div>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/math/math.js"></script>
+<script>
+// More info about initialization & config:
+// - https://revealjs.com/initialization/
+// - https://revealjs.com/config/
+Reveal.initialize({
+hash: true,
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+// Learn about plugins: https://revealjs.com/plugins/
+plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+});
+Reveal.initialize({
+  mathjax3: {
+    mathjax: 'plugin/mathjax/es5/tex-mml-chtml.js',
+    tex: {
+      inlineMath: [ [ '$', '$' ], [ '\\(', '\\)' ]  ]
+    },
+    options: {
+      skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
+    },
+  },
+  plugins: [ RevealMath.MathJax3 ]
+});
+Reveal.initialize({
+  // The "normal" size of the presentation, aspect ratio will
+  // be preserved when the presentation is scaled to fit different
+  // resolutions. Can be specified using percentage units.
+  width: 1240,
+  height: 700,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-		</body>
+  // Factor of the display size that should remain empty around
+  // the content
+  margin: 0.04,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  minScale: 0.2,
+  maxScale: 2.0
+});
+</script>
+</body>
 </html>
