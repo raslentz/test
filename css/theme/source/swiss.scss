@@ -5,8 +5,8 @@
  */
 
 // Default mixins and settings -----------------
-@import "../../../reveal.js/css/theme/template/mixins";
-@import "../../../reveal.js/css/theme/template/settings";
+@import "../template/mixins";
+@import "../template/settings";
 // ---------------------------------------------
 
 // Default colors
@@ -16,7 +16,7 @@ $primaryHighlight: gray;
 $secondaryHighlight: gray;
 
 // Pull in colors (REPLACE THE LINE BELOW) ------
-@import "swiss-colors/black";
+@import "swiss-colors/white";
 // ---------------------------------------------
 
 // Pull in preferred font
