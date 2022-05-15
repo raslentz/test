@@ -5,8 +5,8 @@
  */
 
 // Default mixins and settings -----------------
-@import "~/work/test/test/css/theme/template/mixins";
-@import "~/work/test/test/css/theme/template/settings";
+@import "/home/runner/work/test/test/css/theme/template/mixins";
+@import "/home/runner/work/test/test/css/theme/template/settings";
 // ---------------------------------------------
 
 // Default colors
@@ -69,7 +69,7 @@ $viewport-small: "max-width: 768px";
 $viewport-wide: "min-width: 1280px";
 
 // Theme template ------------------------------
-@import "../../../test/css/theme/template/theme.scss";
+@import "/home/runner/work/test/test/css/theme/template/theme.scss";
 // ---------------------------------------------
 
 // Overrides after theme template import
