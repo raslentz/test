@@ -206,8 +206,8 @@ const initChalkboard = function ( Reveal ) {
 
 	var theme = 'chalkboard';
 	var color = [ 0, 0 ];
-	var toggleChalkboardButton = false;
-	var toggleNotesButton = false;
+	var toggleChalkboardButton = true;
+	var toggleNotesButton = true;
 	var colorButtons = true;
 	var boardHandle = true;
 	var transition = 800;
