@@ -74,6 +74,19 @@ Reveal.initialize({
   width: 1240,
   height: 700,
   hash: true,
+  notes_pointer: {
+        pointer: {
+            size: 15,  // in pixels (scaled like the rest of reveal.js)
+            color: 'rgba(255, 0, 0, 0.8)',  // something valid for css background-color
+            key: 'A'
+        },
+        notes: {
+            key: 'S'
+        }
+    },
+  dependencies: [
+        {src: 'plugin/reveal.js-notes-pointer/notes-pointer.js'}
+    ],
   mathjax3: {
     mathjax: 'plugin/mathjax/es5/tex-mml-chtml.js',
     tex: {
