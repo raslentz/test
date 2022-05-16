@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="dist/reset.css">
 <link rel="stylesheet" href="dist/reveal.css">
 <link rel="stylesheet" href="plugin/chalkboard/style.css">
+<link rel="stylesheet" href="plugin/customcontrols/style.css">
 <link rel="stylesheet" href="dist/theme/swiss-rl.css" id="theme">
 <!-- Theme used for syntax highlighted code -->
 <link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -17,7 +18,7 @@
 <div class="slides">
 <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
 <textarea data-template>
-#### Slide 1
+# Slide 1
 - A paragraph with some text and a [link](http://hakim.se).
 - Second bullet point.
   - subitem
@@ -26,16 +27,16 @@
 
 --
 
-#### Slide 1a
+# Slide 1a
 - Let's start with some math: $a=b$ .
-  
-1. Second bullet point.
-  - subitem
-  - subitem 2
-2. Back to top
-  > hello. This is a block. With some math, $$a=b.$$
+  1. Second bullet point.
+    - subitem
+    - subitem 2
+  2. Back to top
 
-3. And more.
+        > hello. This is a block. With some math, $$a=b.$$
+  
+  3. And more.
 
 ---
 
@@ -43,11 +44,11 @@
 
 ---
 
-#### Slide 3
+# Slide 3
 </textarea>
 </section>
 <section>
-  <h4>Let's try this</h4>
+  <h1>Let's try this</h1>
   <li> one $$\alpha$$ </li>
 \[\begin{aligned}
   \dot{x} &amp; = \sigma(y-x) \\
@@ -64,6 +65,7 @@
 <script src="plugin/highlight/highlight.js"></script>
 <script src="plugin/math/math.js"></script>
 <script src="plugin/chalkboard/plugin.js"></script>
+<script src="plugin/customcontrols/plugin.js"></script>
 <script>
 // More info about initialization & config:
 // - https://revealjs.com/initialization/
@@ -92,7 +94,7 @@ Reveal.initialize({
         transition: 800,
         theme: "chalkboard",
         background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
-        grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
+        grid: { color: 'rgb(50,50,10,0.3)', distance: 40, width: 2},
         eraser: { src: path + 'img/sponge.png', radius: 20},
         boardmarkers : [
                 { color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
@@ -112,6 +114,18 @@ Reveal.initialize({
                 { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
                 { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
         ]
+    },
+    customcontrols: {
+  		controls: [
+  			{ icon: '<i class="fa fa-pen-square"></i>',
+  			  title: 'Toggle chalkboard (B)',
+  			  action: 'RevealChalkboard.toggleChalkboard();'
+  			},
+  			{ icon: '<i class="fa fa-pen"></i>',
+  			  title: 'Toggle notes canvas (C)',
+  			  action: 'RevealChalkboard.toggleNotesCanvas();'
+  			}
+  		]
     }
 });
 </script>

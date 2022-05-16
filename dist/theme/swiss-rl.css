@@ -67,12 +67,12 @@
 /*********************************************
  * HEADERS
  *********************************************/
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4{
+ .reveal h1{
+  text-shadow: none; 
+  font-size: 1.3em;
   margin: 0em 0em 0.2em 0em;
   color: #181818;
+  width: 80%;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-weight: 800;
   line-height: 1em;
@@ -80,7 +80,28 @@
   text-transform: none;
   text-shadow: none;
   word-wrap: break-word; },
+
+.reveal h2 {
+    font-size: 1.3em; }
+
+.reveal h3 {  
+  font-size: 1.3em; }
+    
+.reveal h4{
+  font-size: 1.3em;
+  margin: 0em 0em 0.2em 0em;
+  color: #181818;
+  width: 80%;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 800;
+  line-height: 1em;
+  letter-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word; },
+
 .reveal h5,
+
 .reveal h6 {
   margin: 0 0 0.2em 0;
   color: #181818;
@@ -92,25 +113,11 @@
   text-shadow: none;
   word-wrap: break-word; }
 
-.reveal h1 {
-  font-size: 2.9em; }
-
-.reveal h2 {
-  font-size: 1.8em; }
-
-.reveal h3 {
-  font-size: 1.3em; }
-
-.reveal h4 {
-  font-size: 1.2em; }
-
-.reveal h1 {
-    text-shadow: none; }
-
-.reveal h4:after {
-    content:' ';
+.reveal h1:after {
+    content: ' ';
     margin: 0em 0em 0.5em 0em;
-    display:block;
+    display: block;
+    background: #DC3918;
     border:1.5px solid #DC3918;
     border-radius:4px;
     -webkit-border-radius:4px;
@@ -118,6 +125,20 @@
     box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
     -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
     -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.reveal h4:after {
+  content: ' ';
+  margin: 0em 0em 0.5em 0em;
+  display: block;
+  background: #DC3918;
+  border:1.5px solid #DC3918;
+  border-radius:4px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+  -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+  -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 
 /*********************************************
@@ -228,20 +249,23 @@
   display: block;
   position: relative;
   width: 90%;
+  background: #f1f1f1;
   margin: 0.2em auto;
   text-align: left;
   font-size: 0.55em;
   font-family: monospace;
   line-height: 1.2em;
   word-wrap: break-word;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); }
 
 .reveal code {
+  background: #f1f1f1;
   font-family: monospace;
   text-transform: none; }
 
 .reveal pre code {
   display: block;
+  background: #f1f1f1;
   padding: 5px;
   overflow: auto;
   max-height: 400px;
@@ -334,7 +358,7 @@
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   color: #E74727; }
 
 /*********************************************
