@@ -12,6 +12,10 @@
 <link rel="stylesheet" href="dist/theme/swiss-rl.css" id="theme">
 <!-- Theme used for syntax highlighted code -->
 <link rel="stylesheet" href="plugin/highlight/monokai.css">
+<style> 
+  divLocal { display: table; width: 100%; height: 100%; }
+  pLocal   { display: table-cell; text-align: center; vertical-align: middle; }
+</style>
 </head>
 <body>
 <div class="reveal">
@@ -34,7 +38,7 @@
     - subitem 2
   2. Back to top
 
-        > hello. This is a block. With some math, $$a=b.$$
+      > hello. This is a block. With some math, $$a=b.$$
   
   3. And more.
 
@@ -60,6 +64,9 @@
   <p class="fragment">
     <svg height="100" width="100">
     <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill=#E74727 />
+    <foreignObject x="0" y="00" width="100" height="100">
+      <divLocal><pLocal>$\alpha+\beta$</pLocal></divLocal>
+    </foreignObject>
   </svg>
   </p>
   </div>
